@@ -4,6 +4,10 @@
 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
+*:focus{
+	outline: none;
+}
+
 body {
 	background-color: #DDD;
 	font-family: 'Noto Sans', sans-serif;
@@ -32,7 +36,6 @@ body {
 	left: 0;
 }
 
-
 .right {
 	padding: 40px;
 	width: 300px;
@@ -45,5 +48,94 @@ body {
 	border-radius: 0 2px 2px 0;  
 }
 
+h1 {
+	margin: 0 0 20px 0;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+input {
+	border: 0;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #AAA;
+	margin-bottom: 20px;
+	padding: 4px;
+	height: 32px;
+	width: 220px;
+	font-weight: 600;
+	color: lightgray;
+	}
+
+button.sign-up-button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 220px;
+	height: 32px;
+	border: 0;
+	border-radius: 2px;
+	background-color: #16A085;
+	color: #FFF;
+	transform-text: uppercase;
+	font-weight: 400;
+}
 	
+button.sign-up-button:hover {
+	opacity: 0.8;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	transition: 0.1s ease;
+}
+
+button.sign-up-button:active {
+	opacity: 1;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+input:focus {
+	border-bottom: 2px solid #16a085;
+	color: #16a085;
+	transition: 0.2s ease;
+}
+
+.loginwith {
+	display: block;
+	margin-bottom: 40px;
+	font-size: 2em;
+	color: #FFF;
+	text-align: center;
+}
+
+button.social-signin-facebook, button.social-signin-twitter, button.social-signin-google {
+	margin-bottom: 20px;
+	width: 220px;
+	height: 36px;
+	border: 0;
+	border-radius: 2px;
+	color: #FFF;
+}
+
+button.social-signin-facebook {
+	background-color: #32508e;
+}
+
+button.social-signin-twitter {
+	background-color: #55acee;
+}
+
+button.social-signin-google {
+	background-color: #dd4b39;
+}
+
+.or{
+	position: absolute;
+	top: 180px;
+	left: 280px;
+	width: 40px;
+	height: 40px;
+	background: #ddd;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
 
